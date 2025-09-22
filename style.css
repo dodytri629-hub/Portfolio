@@ -1,0 +1,153 @@
+/* Gaya Umum */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c2c2c;
+    color: #f0f0f0;
+}
+
+.section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+/* Header/Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-title {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2em;
+    color: #aaa;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #6c9948;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Services Section */
+.services-section {
+    padding: 80px 10%;
+    background-color: #2c2c2c;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    text-align: center;
+}
+
+.service-box {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    border-radius: 10px;
+    flex: 1;
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-10px);
+}
+
+.service-box .icon {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-grid img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Section */
+.footer-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c2c2c;
+    border-top: 1px solid #3a3a3a;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+}
